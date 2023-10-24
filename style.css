@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  width: 100vw;
 }
 
 /* HEADER */
@@ -20,6 +19,14 @@ header {
   align-items: center;
   background-color: white;
   box-shadow: 0px 3px 1px 3px rgba(151, 151, 151, 0.144);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+main {
+  margin-top: 18%;
 }
 
 img {
@@ -31,6 +38,7 @@ h1 {
   font-weight: 800;
   font-size: 2.5em;
   text-decoration: underline #0cc0df;
+  color: rgb(170, 170, 170);
   cursor: default;
 }
 
@@ -73,4 +81,14 @@ button:hover {
   color: white;
   background-color: #0cc0df;
   transition: 0.3s;
+}
+
+h3 {
+  padding: 20px;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+li {
+  margin-left: 30px;
 }
