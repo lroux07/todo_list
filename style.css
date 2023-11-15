@@ -47,14 +47,19 @@ h1 {
 h2 {
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding: 25px 0 0 0;
   font-size: 25px;
 }
 
-label {
+.label {
   display: none;
 }
-input {
+
+label {
+  padding: 5px;
+}
+
+.tachesInput {
   display: flex;
   margin: -15px auto;
   width: 350px;

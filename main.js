@@ -1,16 +1,22 @@
 let tachesInput = document.querySelector("#tachesInput");
 let inputBtn = document.querySelector("#inputBtn");
-let ol = document.querySelector("#ol");
+let ul = document.querySelector("#ul");
 
-function liste() {
-  ol.innerHTML += `<li>${tachesInput.value}</li>`;
+const checkFunction = () => {
+  const inputList = document.createElement("INPUT");
+  inputList.setAttribute("type", "checkbox");
+  ul.appendChild(inputList);
+
+  const labelCheked = document.createElement("label");
+  labelCheked.textContent=tachesInput.value;
+  ul.appendChild(labelCheked);
+
+  const br = document.createElement("br");
+  ul.appendChild(br);
+
+  if(checkFunction.value.length === 0) {
+    return;
+  }
 }
 
-inputBtn.addEventListener("click", liste);
-
-
-// if(tachesInput == false) {
-  //   ol.innerHTML = `${
-  //     tachesInput.value.length > 0 ? tachesInput.value : "Veuillez entrer une tâche valide !"
-  //   }`;
-  // }
+inputBtn.addEventListener("click", checkFunction);
